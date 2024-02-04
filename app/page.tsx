@@ -1,5 +1,9 @@
-"use client";
+import HomeComponent from "@/components/home/Home";
 
 export default function Home() {
-  return <div>WELCOME MY DEAR</div>;
+  return (
+    <main>
+      <HomeComponent />
+    </main>
+  );
 }

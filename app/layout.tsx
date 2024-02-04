@@ -1,4 +1,5 @@
-import Header from "@/components/Header";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -21,7 +22,8 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <Header />
-          {children}
+          <div style={{ flexGrow: "1" }}>{children}</div>
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

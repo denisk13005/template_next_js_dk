@@ -1,21 +1,24 @@
 "use client";
-import { UserButton, useUser } from "@clerk/clerk-react";
+import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import styles from "./styles.module.scss";
 
 export default function Header() {
   const { isLoaded, user } = useUser();
+  const router = useRouter();
   useEffect(() => {
-    console.log(user?.id);
-  }, [user]);
+    user && router.push("/");
+  }, [router, user]);
 
   return (
     <header className={styles.headerContainer}>
       <nav className={styles.navBar}>
         <div>
-          <Link href={"/"}>YOUR LOGO HERE</Link>
+          <Image src="/next.svg" alt="logo" width={50} height={50} />
         </div>
         {isLoaded && user && (
           <div>
