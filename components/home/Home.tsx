@@ -26,7 +26,9 @@ export default function HomeComponent() {
         </div>
       </div>
 
-      <div>BONJOUR {isLoaded && user && user.firstName}</div>
+      <div style={{ textAlign: "center" }}>
+        BONJOUR {isLoaded && user ? user.firstName : "VISITEUR"}
+      </div>
     </section>
   );
 }

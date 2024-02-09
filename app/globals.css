@@ -5,16 +5,19 @@
 html {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  height: auto;
-  min-width: 100%;
   background: var(--bgTheme);
+  min-height: 100%;
 }
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  background: var(--bgTheme);
   display: flex;
   flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+.mainContainer {
+  margin: auto;
+  max-width: 1440px;
+  flex-grow: 1;
 }

@@ -18,7 +18,7 @@ export default function Header() {
     <header className={styles.headerContainer}>
       <nav className={styles.navBar}>
         <div>
-          <Image src="/next.svg" alt="logo" width={50} height={50} />
+          <Image src="/logo.svg" alt="logo" width={50} height={50} />
         </div>
         {isLoaded && user && (
           <div>
@@ -34,7 +34,7 @@ export default function Header() {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/profile">
-              <button>Register / Logins</button>
+              <button className={styles.loginBtn}>Register / Logins</button>
             </Link>
           </div>
         )}

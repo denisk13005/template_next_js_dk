@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 100vw;
+  height: 10vh;
   .navBar {
     width: 100vw;
     display: flex;
@@ -33,5 +34,47 @@
         margin-left: 30px;
       }
     }
+  }
+  .loginBtn {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        133deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.8) 52%,
+        transparent 100%
+      );
+      top: 0;
+      left: -200;
+      animation-name: slidein;
+      animation-duration: 6s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-delay: 3s;
+    }
+  }
+}
+@keyframes slidein {
+  0% {
+    left: -200%;
+  }
+  25% {
+    left: 200%;
+  }
+  to {
+    left: 200%;
   }
 }

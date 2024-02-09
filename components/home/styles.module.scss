@@ -1,6 +1,6 @@
 .title {
   text-align: center;
-  font-size: 16vw;
+  font-size: 12vw;
   margin: 0;
   margin: auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -13,8 +13,8 @@
 }
 .span1 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test1;
   animation-timing-function: ease-in-out;
   transform: translateY(-200%);
   animation-fill-mode: both;
@@ -27,10 +27,10 @@
 }
 .span2 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test1;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
   transform: translateY(-200%);
   animation-fill-mode: both;
   background-image: linear-gradient(45deg, #ffffff, #000000);
@@ -42,10 +42,10 @@
 }
 .span3 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test1;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
   transform: translateY(-200%);
   animation-fill-mode: both;
   background-image: linear-gradient(45deg, #ffffff, #000000);
@@ -57,10 +57,10 @@
 }
 .span4 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test1;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
   transform: translateY(-200%);
   animation-fill-mode: both;
   background-image: linear-gradient(45deg, #ffffff, #000000);
@@ -72,10 +72,10 @@
 }
 .span6 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test2;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
   transform: translateY(-200%);
   animation-fill-mode: both;
   background-image: linear-gradient(45deg, #ffffff, #000000);
@@ -87,10 +87,10 @@
 }
 .span7 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test2;
   animation-timing-function: ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   transform: translateY(-200%);
   animation-fill-mode: both;
   background-image: linear-gradient(45deg, #ffffff, #000000);
@@ -102,10 +102,10 @@
 }
 .span8 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test2;
   animation-timing-function: ease-in-out;
-  animation-delay: 1.2s;
+  animation-delay: 0.6s;
   transform: translateY(-200%);
   animation-fill-mode: both;
   background-image: linear-gradient(45deg, #ffffff, #000000);
@@ -117,10 +117,10 @@
 }
 .span9 {
   display: block;
-  animation-duration: 0.2s;
-  animation-name: test;
+  animation-duration: 0.1s;
+  animation-name: test2;
   animation-timing-function: ease-in-out;
-  animation-delay: 1.4s;
+  animation-delay: 0.7s;
   transform: translateY(-200%);
   animation-fill-mode: both;
   background-image: linear-gradient(45deg, #ffffff, #000000);
@@ -131,9 +131,17 @@
   font-weight: 700;
 }
 
-@keyframes test {
+@keyframes test1 {
   from {
     transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes test2 {
+  from {
+    transform: translateY(200%);
   }
   to {
     transform: translateY(0);
