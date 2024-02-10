@@ -23,7 +23,7 @@ export default function Header() {
         {isLoaded && user && (
           <div>
             <Link href="/">Home</Link>
-            <Link href="about">About</Link>
+            <Link href="/about">Nos Offres</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/profile">Profile</Link>
             <UserButton afterSignOutUrl="/" />
@@ -32,7 +32,8 @@ export default function Header() {
         {!user && (
           <div>
             <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
+            <Link href="/about">Nos Offres</Link>
+
             <Link href="/profile">
               <button className={styles.loginBtn}>Register / Logins</button>
             </Link>
