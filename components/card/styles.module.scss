@@ -6,4 +6,8 @@
   min-height: 65vh;
   background: blue;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
