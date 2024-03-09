@@ -3,6 +3,7 @@
   height: 20vh;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
 }
 .footerOnBoardRight {
   position: relative;
@@ -64,6 +65,8 @@
   height: 100%;
   flex-grow: 0.15;
   min-width: 150px;
+  display: flex;
+  justify-content: center;
   @media screen and (max-width: 720px) {
     display: none;
   }

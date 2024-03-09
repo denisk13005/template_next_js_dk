@@ -1,5 +1,5 @@
 import { Acme, Pattaya } from "next/font/google";
-import Image from "next/image";
+import AnimatedLogo from "../animatedLogo/AnimatedLogo";
 import styles from "./styles.module.scss";
 const pattaya = Pattaya({
   subsets: ["latin"],
@@ -26,7 +26,15 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <Image src={"/logo.svg"} alt="logo" fill />{" "}
+        <AnimatedLogo
+          width="160px"
+          height="160px"
+          fixedText="dk"
+          circularText="développement-web "
+          fixedTextSize="52px"
+          cercleTextSize="22px"
+        />
+        {/* <Image src={"/logo.svg"} alt="logo" fill />{" "} */}
       </div>
       <div className={styles.footerOnBoardRight}>
         <div className={styles.footerOnBoardRightInside}>
