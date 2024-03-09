@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
 
-  animation: tourne 4s infinite ease-in-out;
+  animation: tourne 8s infinite ease-in-out;
 }
 
 .cercleTexte span {
@@ -30,6 +30,9 @@
 @keyframes tourne {
   0% {
     transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-360deg);
   }
 
   100% {
