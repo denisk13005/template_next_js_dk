@@ -10,7 +10,7 @@ export default function CardComponent() {
   return (
     <article className={styles.cardContainer}>
       <h3>Site Vitrine</h3>
-      <section>Réalisation d'un site vitrine clé en main </section>{" "}
+      <section>Réalisation d&apos;un site vitrine clé en main </section>{" "}
       <button
         onClick={redirectToStripe}
         className={styles.btn}
