@@ -24,7 +24,7 @@
     height: 80%;
     background-color: white;
     position: absolute;
-    left: 10vw;
+    left: 0vw;
     top: 50%;
     transform: translateY(-50%);
     box-shadow: -4px 0px 7px white;
@@ -53,7 +53,7 @@
     transform: translateY(-50%);
     background-color: white;
     position: absolute;
-    right: 10vw;
+    right: 0vw;
     box-shadow: 4px 0px 7px white;
     @media screen and (max-width: 720px) {
       display: none;
@@ -67,6 +67,8 @@
   min-width: 150px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0px 6vw;
   @media screen and (max-width: 720px) {
     display: none;
   }
